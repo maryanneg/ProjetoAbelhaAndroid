@@ -30,34 +30,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/imageView" />
 
+    <!-- items -->
+
     <EditText
         android:id="@+id/enxame_nome"
-        android:layout_width="247dp"
-        android:layout_height="wrap_content"
+        android:layout_width="187dp"
+        android:layout_height="38dp"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="@font/syne_bold"
         android:inputType="text"
         android:text="Enxame Nome"
+        android:textAlignment="viewStart"
+        android:textColor="@color/amarelo"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/descricao_enxames"
         app:layout_constraintEnd_toEndOf="@+id/descricao_enxames"
-        app:layout_constraintStart_toEndOf="@+id/enxame_imagem" />
+        app:layout_constraintStart_toStartOf="@+id/descricao_enxames"
+        tools:layout_editor_absoluteY="289dp" />
 
     <ImageView
         android:id="@+id/enxame_imagem"
-        android:layout_width="144dp"
-        android:layout_height="132dp"
+        android:layout_width="98dp"
+        android:layout_height="82dp"
         android:contentDescription="@string/description_image"
         android:src="@drawable/abelha"
-        app:layout_constraintBottom_toBottomOf="@+id/descricao_enxames"
-        app:layout_constraintTop_toTopOf="@+id/descricao_enxames"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="327dp" />
 
     <EditText
         android:id="@+id/descricao_enxames"
-        android:layout_width="251dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
+        android:layout_width="237dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="96dp"
         android:background="@color/cinza_claro"
         android:ems="10"
         android:gravity="start|top"
@@ -66,7 +70,72 @@
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/enxame_imagem"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <!-- items -->
+
+    <EditText
+        android:id="@+id/enxame_nome2"
+        android:layout_width="187dp"
+        android:layout_height="38dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/syne_bold"
+        android:inputType="text"
+        android:text="Enxame Nome"
+        android:textAlignment="viewStart"
+        android:textColor="@color/amarelo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/descricao_enxames2"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toEndOf="@+id/enxame_imagem2"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <ImageView
+        android:id="@+id/enxame_imagem2"
+        android:layout_width="98dp"
+        android:layout_height="82dp"
+        android:contentDescription="@string/description_image"
+        android:src="@drawable/abelha"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <EditText
+        android:id="@+id/descricao_enxames2"
+        android:layout_width="237dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="96dp"
+        android:background="@color/cinza_claro"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/enxame_imagem"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/add"
+        android:text=""
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <SearchView
+        android:layout_width="181dp"
+        android:layout_height="33dp"
+        android:background="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.349" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
