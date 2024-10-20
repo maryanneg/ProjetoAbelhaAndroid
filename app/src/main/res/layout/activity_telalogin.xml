@@ -71,7 +71,7 @@
         app:layout_constraintTop_toTopOf="@+id/password" />
 
     <Button
-        android:id="@+id/btlogin"
+        android:id="@+id/bt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
@@ -133,8 +133,8 @@
         android:text="@string/esqueci_a_senha"
         android:textColor="@color/cinza"
         android:textSize="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/btlogin"
-        app:layout_constraintTop_toTopOf="@+id/btlogin" />
+        app:layout_constraintEnd_toStartOf="@+id/bt_login"
+        app:layout_constraintTop_toTopOf="@+id/bt_login" />
 
     <TextView
         android:id="@+id/titulologin"

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProjetoAbelha"
         tools:targetApi="31">
         <activity
+            android:name=".Enxames"
+            android:exported="false" />
+        <activity
             android:name=".Telalogin"
             android:exported="false" />
         <activity

@@ -10,7 +10,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.telainicial)
 
-        // Corrigindo o ID do botão para btinicial
+
         val btInicial = findViewById<Button>(R.id.bt_inicial)
 
         btInicial.setOnClickListener {
