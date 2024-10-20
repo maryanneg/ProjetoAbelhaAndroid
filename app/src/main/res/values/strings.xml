@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Projeto Abelha</string>
+    <string name="login">Login</string>
+    <string name="Password"> senha</string>
+    <string name="Email"> email</string>
+    <string name="efetue_seu_login_para_continuar">Efetue seu login para continuar</string>
+    <string name="esqueci_a_senha">esqueci a senha</string>
+    <string name="Entrar">Entrar</string>
+
+</resources>
