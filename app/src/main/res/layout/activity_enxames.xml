@@ -80,53 +80,6 @@
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.503" />
 
-    <TextView
-        android:id="@+id/enxame_nome2"
-        android:layout_width="187dp"
-        android:layout_height="38dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:fontFamily="@font/syne_bold"
-        android:inputType="text"
-        android:text="Enxame Nome"
-        android:textAlignment="viewStart"
-        android:textColor="@color/amarelo"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/descricao_enxames2"
-        app:layout_constraintEnd_toEndOf="@+id/descricao_enxames2"
-        app:layout_constraintHorizontal_bias="0.595"
-        app:layout_constraintStart_toEndOf="@+id/enxame_imagem2" />
-
-    <ImageView
-        android:id="@+id/enxame_imagem2"
-        android:layout_width="98dp"
-        android:layout_height="82dp"
-        android:contentDescription="@string/description_image"
-        android:src="@drawable/abelha"
-        app:layout_constraintBottom_toBottomOf="@+id/descricao_enxames2"
-        app:layout_constraintEnd_toStartOf="@+id/descricao_enxames2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/enxame_imagem"
-        app:layout_constraintTop_toBottomOf="@+id/enxame_nome2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/descricao_enxames2"
-        android:layout_width="237dp"
-        android:layout_height="82dp"
-        android:background="@color/cinza_claro"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:padding="8dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.752"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.713" />
-
     <Button
         android:id="@+id/bt_adicionar"
         android:layout_width="48dp"
@@ -150,6 +103,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.349" />
+
+    <ListView
+        android:id="@+id/listViewEnxames"
+        android:layout_width="408dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.673"
+        tools:listitem="@layout/list_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

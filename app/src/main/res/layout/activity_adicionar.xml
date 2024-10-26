@@ -21,40 +21,16 @@
         app:layout_constraintVertical_bias="0.002" />
 
     <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="296dp"
-        android:ems="10"
-        android:hint="Data de Captura"
-        android:inputType="date"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/nome_cientifico"
-        android:layout_width="249dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="164dp"
-        android:hint="Nome Cientifico"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/especie"
         android:layout_width="249dp"
         android:layout_height="51dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/search"
         android:hint="Espécie"
+        android:paddingLeft="8dp"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,23 +38,13 @@
         android:id="@+id/origem"
         android:layout_width="249dp"
         android:layout_height="51dp"
-        android:layout_marginTop="356dp"
+        android:layout_marginTop="212dp"
+        android:background="@drawable/search"
         android:hint="Origem"
+        android:paddingLeft="8dp"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/codigo"
-        android:layout_width="249dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="424dp"
-        android:hint="Código"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,12 +52,14 @@
         android:id="@+id/descricao"
         android:layout_width="249dp"
         android:layout_height="51dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginTop="276dp"
+        android:background="@drawable/search"
         android:hint="Descrição"
         android:inputType="textImeMultiLine"
+        android:paddingLeft="8dp"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,11 +67,11 @@
         android:id="@+id/buttonSelectImage"
         android:layout_width="173dp"
         android:layout_height="40dp"
-        android:layout_marginTop="576dp"
+        android:layout_marginTop="412dp"
         android:text="Selecionar Imagem"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -149,6 +117,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.954" />
+
+    <EditText
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/search"
+        android:ems="10"
+        android:hint="Data"
+        android:inputType="date"
+        android:paddingLeft="8dp"
+        app:layout_constraintStart_toStartOf="@+id/descricao"
+        app:layout_constraintTop_toBottomOf="@+id/descricao" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
