@@ -2,26 +2,28 @@ package com.example.projetoabelha
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.ComponentActivity
+import com.example.projetoabelha.databinding.TelainicialBinding
 
 class MainActivity : ComponentActivity() {
+    private lateinit var binding: TelainicialBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.telainicial)
+        binding = TelainicialBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-
-        val btInicial = findViewById<Button>(R.id.bt_inicial)
-
-        btInicial.setOnClickListener {
+        binding.btInicial.setOnClickListener {
             irParaLogin()
         }
+        binding.btcadastreSe.setOnClickListener {
+            irParaCadastro()
+        }
     }
-
     private fun irParaLogin() {
-
-        val telaLogin = Intent(this, Telalogin::class.java)
-        startActivity(telaLogin)
+        startActivity(Intent(this, Telalogin::class.java))
+    }
+    private fun irParaCadastro() {
+        startActivity(Intent(this, Cadastro::class.java))
     }
 }
 
