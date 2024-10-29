@@ -7,5 +7,14 @@
     <string name="esqueci_a_senha">esqueci a senha</string>
     <string name="Entrar">Entrar</string>
     <string name="description_image">descrição da imagem</string>
+    <string name="origem">Origem</string>
+    <string name="especie">Especie</string>
+    <string name="descricao">Descricao</string>
+    <string name="selecionar_imagem">Selecionar Imagem</string>
+    <string name="adicionar_enxames">Adicionar Enxames</string>
+    <string name="salvar">Salvar</string>
+    <string name="data">Data</string>
+    <string name="especie2">especie</string>
+    <string name="adicionar">Adicionar</string>
 
 </resources>

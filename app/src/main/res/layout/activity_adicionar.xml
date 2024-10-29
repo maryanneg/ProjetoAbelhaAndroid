@@ -26,13 +26,14 @@
         android:layout_height="51dp"
         android:layout_marginTop="152dp"
         android:background="@drawable/search"
-        android:hint="Espécie"
-        android:paddingLeft="8dp"
+        android:hint="@string/especie2"
+        android:paddingStart="8dp"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,RtlSymmetry,SpUsage,TextFields" />
 
     <EditText
         android:id="@+id/origem"
@@ -40,35 +41,38 @@
         android:layout_height="51dp"
         android:layout_marginTop="212dp"
         android:background="@drawable/search"
-        android:hint="Origem"
-        android:paddingLeft="8dp"
+        android:hint="@string/origem"
+        android:paddingStart="8dp"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,RtlSymmetry,SpUsage,TextFields" />
 
     <EditText
         android:id="@+id/descricao"
         android:layout_width="249dp"
         android:layout_height="51dp"
         android:layout_marginTop="276dp"
+        android:autofillHints=""
         android:background="@drawable/search"
-        android:hint="Descrição"
+        android:hint="@string/descricao"
         android:inputType="textImeMultiLine"
-        android:paddingLeft="8dp"
-        android:textSize="15dp"
+        android:paddingStart="8dp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
 
     <Button
         android:id="@+id/buttonSelectImage"
         android:layout_width="173dp"
         android:layout_height="40dp"
         android:layout_marginTop="412dp"
-        android:text="Selecionar Imagem"
+        android:text="@string/selecionar_imagem"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -80,9 +84,9 @@
         android:layout_width="294dp"
         android:layout_height="52dp"
         android:fontFamily="@font/syne_medium"
-        android:text="Adicionar Enxames"
+        android:text="@string/adicionar_enxames"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/header2"
         app:layout_constraintHorizontal_bias="0.884"
@@ -109,7 +113,8 @@
         android:layout_height="wrap_content"
         android:background="@color/amarelo"
         android:fontFamily=""
-        android:text="Salvar"
+
+        android:text="@string/salvar"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,11 +131,12 @@
         android:layout_marginTop="11dp"
         android:background="@drawable/search"
         android:ems="10"
-        android:hint="Data"
+        android:hint="@string/data"
         android:inputType="date"
-        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
         app:layout_constraintStart_toStartOf="@+id/descricao"
-        app:layout_constraintTop_toBottomOf="@+id/descricao" />
+        app:layout_constraintTop_toBottomOf="@+id/descricao"
+        tools:ignore="Autofill,RtlSymmetry" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
