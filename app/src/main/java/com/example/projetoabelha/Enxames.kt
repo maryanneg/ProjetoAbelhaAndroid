@@ -19,6 +19,10 @@ class Enxames : ComponentActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        val recyclerView = binding.recyclerView
+        val enxameCustomAdapter = EnxameListAdapter(listaEnxames = ArrayList())
+        recyclerView.adapter = enxameCustomAdapter
+
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         val mock = EnxameMock()
         binding.recyclerView.adapter = EnxameListAdapter(mock.listaEnxames)

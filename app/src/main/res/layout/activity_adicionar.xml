@@ -36,7 +36,7 @@
         tools:ignore="Autofill,RtlSymmetry,SpUsage,TextFields" />
 
     <EditText
-        android:id="@+id/origem"
+        android:id="@+id/textOrigem"
         android:layout_width="249dp"
         android:layout_height="51dp"
         android:layout_marginTop="212dp"
