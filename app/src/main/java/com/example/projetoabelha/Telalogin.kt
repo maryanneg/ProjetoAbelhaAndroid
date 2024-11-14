@@ -20,9 +20,6 @@ class Telalogin : ComponentActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTelaloginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        binding.btLogin.setOnClickListener {
-//            irParaTelaEnxames()
-//        }
 
         dbHelper = UserDatabaseHelper(this)
 
@@ -38,18 +35,6 @@ class Telalogin : ComponentActivity() {
         }
     }
 
-//    private fun irParaTelaEnxames() {
-//        val email = binding.email.text.toString().trim()
-//        val senha = binding.senha.text.toString().trim()
-//        if(email.isEmpty() || senha.isEmpty()) {
-//            Toast.makeText(applicationContext,"E-mail ou senha não inseridos!", Toast.LENGTH_SHORT).show()
-//        }else if((email != "vlconta.suporte@gmail.com" && !email.isEmpty()) || (senha != "123456" && !senha.isEmpty())){
-//            Toast.makeText(this,"E-mail ou Senha Inválido!", Toast.LENGTH_LONG).show()
-//        }else{
-//            startActivity(Intent(this, Enxames::class.java))
-//        }
-//
-//    }
 
     private fun login(){
         val db = dbHelper.readableDatabase
