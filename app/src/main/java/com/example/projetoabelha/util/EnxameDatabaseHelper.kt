@@ -64,7 +64,7 @@ class EnxameDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABAS
                 val descricao = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DESCRIPTION))
                 val date = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_DATE))
 
-                enxames.add(Enxamme(id.toString(), especie, origem, descricao, date))
+                enxames.add(Enxamme(id, especie, origem, descricao, date))
             } while(cursor.moveToNext())
         }
         cursor.close()
