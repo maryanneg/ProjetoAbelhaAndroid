@@ -12,7 +12,7 @@
 
 > [!TIP]
 > ## 💻 Pré-requisitos
->Antes de começar, verifique se você atendeu aos seguintes requisitos:
+>Antes de começar, verifique se você atendeu aos seguintes requisitos: 
 
 >- Possuir o Ambiente de Desenvolvimento `<Android Studio> `.
 >- Requisitos do Sistema `<8 GB+ RAM, 8 GB of available disk space minimum (IDE + Android SDK + Android Emulator, x86_64 CPU architecture; 2nd generation Intel Core or newer, or AMD CPU with support for a Windows Hypervisor.)`
