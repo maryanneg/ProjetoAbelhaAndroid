@@ -42,7 +42,7 @@ class Adicionar : ComponentActivity() {
             put("especie", binding.especie.text.toString())
             put("origem", binding.origem.text.toString())
             put("descricao", binding.descricao.text.toString())
-            put("date", binding.data.text.toString())
+            put("date", binding.dataDia.text.toString())
         }
 
         val newRowId = db.insert(EnxameDatabaseHelper.TABLE_NAME, null, values)

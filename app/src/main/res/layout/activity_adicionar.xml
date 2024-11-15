@@ -67,18 +67,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded,RtlSymmetry" />
 
-    <Button
-        android:id="@+id/buttonSelectImage"
-        android:layout_width="173dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="388dp"
-        android:text="@string/selecionar_imagem"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="294dp"
