@@ -16,5 +16,6 @@
     <string name="data">Data</string>
     <string name="especie2">especie</string>
     <string name="adicionar">Adicionar</string>
+    <string name="image_description" />
 
 </resources>

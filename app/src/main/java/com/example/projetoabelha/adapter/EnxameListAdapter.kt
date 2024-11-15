@@ -34,13 +34,14 @@ class EnxameListAdapter(
         private val tvOrigem: TextView = itemView.findViewById(R.id.tvOrigem)
         private val tvDescricao: TextView = itemView.findViewById(R.id.tvDescricao)
         private val tvData: TextView = itemView.findViewById(R.id.tvData)
+        private val tvId: TextView = itemView.findViewById(R.id.tvId)
 
         fun bind(enxames: Enxamme) {
             tvEspecie.text = enxames.especie
             tvOrigem.text = enxames.origem
             tvData.text = enxames.date
             tvDescricao.text = enxames.descricao
-
+            tvId.text = enxames.id.toString()
         }
     }
 }
