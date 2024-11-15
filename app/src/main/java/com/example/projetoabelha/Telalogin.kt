@@ -29,6 +29,9 @@ class Telalogin : ComponentActivity() {
         binding.btLogin.setOnClickListener {
             login()
         }
+        binding.resetsenha.setOnClickListener {
+            esqueciSenha()
+        }
     }
 
     private fun login() {
@@ -49,5 +52,8 @@ class Telalogin : ComponentActivity() {
             Toast.makeText(this, "E-mail ou Senha Inválido!", Toast.LENGTH_LONG).show()
         }
         cursor.close()
+    }
+    private fun esqueciSenha(){
+       // startActivity(Intent(this, SenhaNova::class.java))
     }
 }

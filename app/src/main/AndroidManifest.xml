@@ -13,6 +13,20 @@
         android:theme="@style/Theme.ProjetoAbelha"
         tools:targetApi="31">
         <activity
+            android:name=".SenhaNova"
+            android:exported="false"
+            android:theme="@style/Theme.ProjetoAbelha" />
+        <activity
+            android:name=".NovaSenha"
+            android:exported="false"
+            android:theme="@style/Theme.ProjetoAbelha" />
+        <activity
+            android:name=".EsqueciSenha"
+            android:exported="false" />
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false" />
+        <activity
             android:name=".util.EsqueciSenha"
             android:exported="false" />
         <activity
