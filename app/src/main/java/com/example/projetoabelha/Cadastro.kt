@@ -55,16 +55,31 @@ class Cadastro : ComponentActivity() {
         }
 
         val newRowId = db.insert(UserDatabaseHelper.TABLE_NAME, null, values)
-        if(newRowId != -1L) {
+        if((newRowId != -1L) && (validarCampos(name, email, password))) {
             Toast.makeText(this, "Usuário foi cadastrado com sucesso.", Toast.LENGTH_SHORT).show()
             retornar()
         } else {
-            Toast.makeText(this, "Erro ao cadastrar usuário.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Erro ao cadastrar usuário (verifique os campos).", Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun retornar() {
         val intent = Intent(this, Telalogin::class.java)
         startActivity(intent)
+    }
+    fun validarCampos(name: String, email: String, password: String): Boolean {
+        if (name.isBlank()) {
+            println("O campo 'Nome' não pode estar vazio.")
+            return false
+        }
+        if (email.isBlank()) {
+            println("O campo 'Email' não pode estar vazio.")
+            return false
+        }
+        if (password.isBlank()) {
+            println("O campo 'Senha' não pode estar vazio.")
+            return false
+        }
+        return true
     }
 }
