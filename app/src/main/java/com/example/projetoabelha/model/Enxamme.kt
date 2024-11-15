@@ -1,3 +1,8 @@
-package com.example.projetoabelha.model
 
-class Enxamme (var especie:String, var origem:String, var descricao:String,var data:String,var imageId:Int)
+data class Enxamme(
+    val id: Long,
+    val especie: String,
+    val origem: String,
+    val descricao: String,
+    val date: String
+)

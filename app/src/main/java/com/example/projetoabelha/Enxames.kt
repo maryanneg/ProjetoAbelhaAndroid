@@ -4,32 +4,38 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.projetoabelha.adapter.EnxameListAdapter
-import com.example.projetoabelha.data.EnxameMock
 import com.example.projetoabelha.databinding.ActivityEnxamesBinding
+import com.example.projetoabelha.util.EnxameDatabaseHelper
 
 class Enxames : ComponentActivity() {
     private lateinit var binding: ActivityEnxamesBinding
+    private lateinit var dbHelper: EnxameDatabaseHelper
+    private lateinit var enxameAdapter: EnxameListAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityEnxamesBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        val mock = EnxameMock()
-        binding.recyclerView.adapter = EnxameListAdapter(mock.listaEnxames)
+        dbHelper = EnxameDatabaseHelper(this)
+
+        val enxames = dbHelper.getAllEnxames().toMutableList()
+
+        enxameAdapter = EnxameListAdapter(
+            this,
+            enxames
+        )
+
+        val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = enxameAdapter
 
 
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
         val btAdicionar = findViewById<Button>(R.id.bt_adicionar)
         btAdicionar.setOnClickListener {
