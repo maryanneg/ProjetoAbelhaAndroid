@@ -54,6 +54,6 @@ class Telalogin : ComponentActivity() {
         cursor.close()
     }
     private fun esqueciSenha(){
-       // startActivity(Intent(this, SenhaNova::class.java))
+        startActivity(Intent(this, RecuperarSenha::class.java))
     }
 }
