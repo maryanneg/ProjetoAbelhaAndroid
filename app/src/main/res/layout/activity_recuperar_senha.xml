@@ -9,7 +9,7 @@
     tools:context=".RecuperarSenha">
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editEmailRec"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:background="@drawable/search"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.292" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/editConfSenha"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:background="@drawable/search"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.442" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editNovaSenha"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:background="@drawable/search"
@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="0.122" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSalvarNovaSenha"
         android:layout_width="185dp"
         android:layout_height="52dp"
         android:text="Salvar"
