@@ -52,4 +52,14 @@ class UserDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         db.close()
         return result != -1L
     }
+
+    fun updatePassword(email: String, newPassword: String): Boolean {
+        val db = writableDatabase
+        val contentValues = ContentValues().apply {
+            put(COLUMN_PASSWORD, newPassword)
+        }
+        val result = db.update(TABLE_NAME, contentValues, "$COLUMN_EMAIL = ?", arrayOf(email))
+        db.close()
+        return result > 0
+    }
 }
