@@ -1,6 +1,6 @@
 > [!NOTE]
 > # Colmeia Conectada
-> Repositório criado para discilina acadêmica Programação para dispositivos móveis em android utilizando a linguagem de programação Kotlin.
+> Repositório criado para o projeto de avaliação da discilina acadêmica Programação para dispositivos móveis em android utilizando a linguagem de programação Kotlin.
 
 > ## Escopo
 > Desenvolvimento de um aplicativo como solução real para um case utilizando boas práticas de programação.
